@@ -1,12 +1,15 @@
+import Resume from './Resume';
+
 export default function Landing() {
   return (
     <main style={{ padding: '1rem 0' }}>
       <h2>Welcome </h2>
+      <div className="welcome-continer">SOMETHING INSIDE OF HERE IDK YET</div>
       <br></br>
       <div className="info-and-images">
         <div className="info-links-container">
           <div id="info-links-display">
-            This is where my resume would display
+            <Resume />
           </div>
           <div id="info-links-list">LinkedIn Resume ...</div>
         </div>
@@ -25,6 +28,11 @@ export default function Landing() {
           <h3>Projects:</h3>
           FILTER TECH stacks CARDS Pagination
         </div>
+      </div>
+      <br></br>
+      <div className="contact-container">
+        EMAIL ICONS
+        <div id="name-and-email">NAME: EMAIL: </div>
       </div>
     </main>
   );
